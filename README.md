@@ -1,4 +1,6 @@
-# terraform-onboarding-module
+# terraform-tfe-onboarding-module
+
+# THIS IS UNDER ACTIVE DEVELOPMENT. ABANDON ALL HOPE YE WHO ENTER HERE. PIN YOUR MODULE VERSIONS
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
