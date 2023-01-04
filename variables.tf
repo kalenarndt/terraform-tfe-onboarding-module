@@ -51,14 +51,20 @@ variable "variables" {
 
 variable "create_project" {
   description = "(Optional) Boolean that allows for the creation of a Project in Terraform Cloud that the workspace will use. This feature is in beta and currently doesn't have a datasource"
-  type = bool
-  default = false
+  type        = bool
+  default     = false
 }
 
 variable "project_name" {
   description = "(Optional) Name of the Project that is created in Terraform Cloud if var.create_project is set to true. Note this is currently in beta"
-  type = string
-  default = ""
+  type        = string
+  default     = ""
+}
+
+variable "assessments_enabled" {
+  description = "(Optional) Boolean that enables heath assessments on the workspace"
+  type        = bool
+  default     = false
 }
 
 # # RBAC
