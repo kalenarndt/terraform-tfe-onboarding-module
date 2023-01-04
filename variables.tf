@@ -31,7 +31,7 @@ variable "workspace_tags" {
 
 ## VCS variables (existing VCS connection)
 variable "vcs_repo" {
-  description = "(Optional) - Map of objects taht will be used when attaching a VCS Repo to the Workspace. "
+  description = "(Optional) - Map of objects that will be used when attaching a VCS Repo to the Workspace. "
   default     = {}
   type        = map(string)
 }
@@ -47,6 +47,18 @@ variable "variables" {
   description = "Map of all variables for workspace"
   type        = map(any)
   default     = {}
+}
+
+variable "create_project" {
+  description = "(Optional) Boolean that allows for the creation of a Project in Terraform Cloud that the workspace will use. This feature is in beta and currently doesn't have a datasource"
+  type = bool
+  default = false
+}
+
+variable "project_name" {
+  description = "(Optional) Name of the Project that is created in Terraform Cloud if var.create_project is set to true. Note this is currently in beta"
+  type = string
+  default = ""
 }
 
 # # RBAC
